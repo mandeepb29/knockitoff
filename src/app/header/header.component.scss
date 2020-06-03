@@ -16,4 +16,41 @@
     top: 50%;display: none;
     transform: translateY(-50%);
 }
+.custom-dropdown{
+    min-width: 700px;
+    max-width: 100%;
+    padding: 0;
+    border-top: none;
+}
+.dropdown-section{
+    padding: 0;
+    list-style: none;
+    padding: 2rem 2rem;
+    
+    .dropdown-item{
+        i{
+            font-size:1.5rem;
+            margin-right: 2px;
+        }
+        a{
+            padding: 0.5rem 0;
+            border-bottom: none;
+            font-weight: 500;
+            margin-bottom: 4px;
 
+           
+        }
+
+    }
+}
+
+.bg-gradient-blue,.bg-gradient-purple{
+    .dropdown-item {a{
+        color: #fff !important;
+        font-weight: 600;
+        opacity: 0.8;
+        &:hover{
+            opacity: 1;
+        }
+    }}
+}

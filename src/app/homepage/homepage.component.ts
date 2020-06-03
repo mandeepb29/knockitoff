@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomepageComponent implements OnInit {
 
+  step:number;
   constructor() { }
 
   ngOnInit(): void {
+    this.step = 1;
   }
 
 }

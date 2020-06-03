@@ -1,0 +1,28 @@
+.footer-about{
+    padding: 0 5rem;
+    p{
+        color: #101010d2;
+        font-weight: 600;
+        font-size: 1.6rem;
+    }
+}
+
+.call-to-action-text{
+    margin-bottom: 4rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #ececec;
+}
+
+.copyright-info{
+    font-size: 14px;
+}
+
+.brand-link{
+    font-weight: 700;
+    border-bottom: 1.5px solid transparent;
+    transition: all 0.4s;
+
+    &:hover{
+        border-bottom: 1.5px solid #101010;
+    }
+}

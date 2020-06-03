@@ -29,6 +29,12 @@
 
 /* Typography
 ================================================== */
+html{
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+}
 
 body {
     overflow-x: hidden;
@@ -282,6 +288,19 @@ img.pull-right {
     left: 0;
 }
 
+.bg-gradient-blue{
+    background: linear-gradient(45deg,#1687ac,#41bde7);
+}
+.bg-gradient-purple{
+    background: linear-gradient(45deg,#a60b43,#f42671);
+}
+
+.bg-gradient-blue-dark{
+    background: linear-gradient(45deg,#19295a,#2ec3fb);
+}
+.text-white{
+    color: #fff;
+}
 
 /* Dropcap */
 
@@ -458,6 +477,14 @@ cite {
 
 .btn-primary {
     background: #1caad9;
+}
+
+.btn-purple{
+    background-color: #df1660;
+}
+
+.text-purple{
+    color: #df1660 !important;
 }
 
 .btn-dark {
@@ -982,17 +1009,15 @@ ul.navbar-nav>li>a i {
 }
 
 .dropdown-menu li a {
-    font-family: 'Montserrat', sans-serif;
     display: block;
-    font-size: 12px;
-    text-transform: uppercase;
-    font-weight: 700;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 600;
     line-height: normal;
     text-decoration: none;
     padding: 15px 0;
     letter-spacing: .3px;
     border-bottom: 1px solid #e5e5e5;
-    color: #333333;
 }
 
 .dropdown-menu li:last-child>a {
@@ -1002,8 +1027,10 @@ ul.navbar-nav>li>a i {
 
 .dropdown-menu li a:hover,
 .dropdown-menu li a:focus {
-    color: #1caad9;
+    color: #1caad9 !important;
 }
+
+
 
 @media (min-width: 768px) {
     ul.nav li.dropdown:hover ul.dropdown-menu {
@@ -2587,7 +2614,7 @@ img.testimonial-thumb {
 /*- Footer common */
 
 .footer {
-    background-color: #0d0d0d;
+    background-color: #ffffff;
     color: #999;
 }
 
@@ -2597,13 +2624,13 @@ img.testimonial-thumb {
 }
 
 .footer .widget-title {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
     position: relative;
     margin: 0 0 30px;
     padding-left: 15px;
     text-transform: uppercase;
-    color: #fff;
+    color: #3c3c3c;
     border-left: 3px solid #1caad9;
 }
 
@@ -2619,9 +2646,9 @@ img.testimonial-thumb {
 
 /* Footer social */
 
-.footer-social {
+/* .footer-social {
     margin-top: 15px;
-}
+} */
 
 .footer-social .widget-title {
     font-size: 14px;
@@ -2635,7 +2662,7 @@ img.testimonial-thumb {
 }
 
 .footer-social ul li {
-    margin: 0 10px 0 0;
+    margin: 0 25px 0 0;
     display: inline-block;
 }
 
@@ -2651,7 +2678,7 @@ img.testimonial-thumb {
 }
 
 .footer-social ul li a i:hover {
-    color: #fff;
+    color: #1caad9;
 }
 
 
@@ -2661,7 +2688,7 @@ img.testimonial-thumb {
 
 .footer-widget ul.list-arrow li {
     border-bottom: 1px solid rgba(255, 255, 255, .07);
-    padding: 8px 0;
+    padding: 3px 0;
 }
 
 .footer-widget ul.list-arrow li:last-child {
@@ -2670,7 +2697,9 @@ img.testimonial-thumb {
 
 .footer-widget ul.list-arrow li a,
 .footer-widget ul.list-arrow li:before {
-    color: #747474;
+    color: #6f6f6f;
+    font-weight: 600;
+    font-size: 14px;
 }
 
 .footer-widget ul.list-arrow li:hover a,
@@ -2690,11 +2719,13 @@ img.testimonial-thumb {
 /*-- Copyright --*/
 
 .copyright {
-    background: #1caad9;
+    background: #ffffff;
     color: #111;
     padding: 25px 0;
     position: relative;
     z-index: 1;
+    border-top: 1px solid #ececec;
+    margin: 0 2rem;
     font-weight: 600;
     font-size: 12px;
 }
@@ -2716,7 +2747,7 @@ img.testimonial-thumb {
 }
 
 .footer-menu ul li a:hover {
-    color: #fff;
+    color: #1caad9;
 }
 
 #back-to-top {
