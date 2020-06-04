@@ -220,7 +220,7 @@
 	/* Nav search */
 
 	.nav-search{
-		top: 18px;
+		top: 3rem;
 	}
 
 
@@ -258,7 +258,7 @@
 	/* Slideshow */
 
 	#main-slide .item{
-		min-height: 500px;
+		min-height: 420px;
 	}
 
 	.slide-title{
@@ -323,7 +323,7 @@
 	}
 
 	.isotope-nav ul li:last-child{
-		margin-bottom: 0;
+		margin-bottom: 1rem;
 	}
 
 	/* Content area */
@@ -458,7 +458,6 @@
 
 	.site-nav-inner{
 		width: 100%;
-		padding: 6px 0;
 	}
 
    .navbar-collapse.collapse {
@@ -467,7 +466,7 @@
 
    ul.navbar-nav {
       float: none !important;
-		margin-top: 7.5px;
+		margin: 0;
 	}
 
 	ul.navbar-nav>li {
@@ -480,7 +479,7 @@
 	}
 
 	.navbar-collapse.in {
-    overflow-y: auto;
+	overflow-y: scroll;height: 50vh;
 	}
 
 	ul.nav li.dropdown:hover ul.dropdown-menu {
@@ -532,7 +531,7 @@
 
 	ul.navbar-nav > li{
 		display: block;
-		padding-left: 20px !important;
+		padding: 0;
 	}
 
 	.navbar-nav .open .dropdown-menu>li>a {
@@ -549,25 +548,29 @@
 	ul.navbar-nav li a{
 		line-height:normal !important;
 		color:#333;
-		border-top: 1px solid #303030 !important;
-		border-bottom: 0;
-		padding: 10px 0;
+	
+		border-top: 0;
 		display: block;
-		min-width: 350px;
+		min-width: 100%;
+	}
+	ul.navbar-nav li a:not(:last-child){
+		border-bottom: 1px solid #303030 ;
 	}
 	ul.navbar-nav .dropdown-menu{ float:none;position: relative; border:0; margin:0; padding:0;}
-	ul.navbar-nav .dropdown-menu li a{ color:#fff; padding-left:20px!important;}
+	ul.navbar-nav .dropdown-menu li a{ color:#fff;}
 	ul.navbar-nav li.dropdown ul.dropdown-menu li.dropdown-submenu .dropdown-menu{ left:0;position: relative;}
 	ul.navbar-nav li.dropdown ul.dropdown-menu li.dropdown-submenu .dropdown-menu a{ padding-left:50px;}
 	ul.navbar-nav li.dropdown ul.dropdown-menu li.dropdown-submenu a i{ margin-top:-22px;}
 	ul.navbar-nav li.dropdown ul.dropdown-menu li.dropdown-submenu .dropdown-menu li a{ padding-left:35px!important;}
 	ul.navbar-nav .dropdown-menu{box-shadow: none;border-top: 0;background: none;}
-	ul.navbar-nav li a i, .dropdown-submenu>a:after {background: #222;float: right;width: 36px;height: 28px;line-height: 28px;margin-top: -5px;text-align: center;}
+	ul.navbar-nav li a i, .dropdown-submenu>a:after {background: rgb(228, 228, 228);float: right;width: 36px;height: 28px;line-height: 28px;margin-top: -5px;text-align: center;display: inline-flex;
+	justify-content: center; align-items: center;}
 	.dropdown-submenu>a:after{margin-right: 0;}
 
 
 	.nav-search{
-		top: 15px;
+		top: 3rem;
+		right: 2rem;
 	}
 
 	.search-block{
@@ -719,7 +722,7 @@
 	}
 
 	.isotope-nav {
-    	margin: 20px 20px 40px;
+    	margin: 1.5rem 0;
 	}
 
 	.isotope-nav ul li{
@@ -839,7 +842,13 @@
 /* Extra Small Devices, Phones */ 
 @media (max-width : 479px) {
 
+html{
+	font-size: 8px;
+}
 
+p{
+	text-align: justify;
+}
 	/* Tab */
 
 	.featured-tab .nav-tabs > li > a{

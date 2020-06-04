@@ -20,7 +20,10 @@
     background-color: #fff;
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
     border-radius: 8px;
-    padding: 5rem 3rem;
+    padding: 2rem 3rem;
+    .col-md-4{
+        margin: 2rem 0;
+    }
     .action-img{
         width: 50%;
     }
@@ -141,6 +144,9 @@
     margin: 0px 0 25px;
     color: #1caad9;
 }
+.banner-section{
+    padding: 0;
+}
 .banner-wrap{
     padding:10rem 6rem;
     border-radius: 0.5rem;
@@ -174,7 +180,7 @@
     }
     .item-text{
         color: #fff;
-      
+        text-align: justify;
         font-weight: 500;
         font-size:1.5rem;
     }
@@ -342,4 +348,62 @@
 	left:0;
 	right:50%;
 	margin-right:20px;
+}
+
+@media all and (max-width:991px){
+    .md-step-title{
+        display: none;
+    }
+    .feature-img{
+        margin-bottom: 2rem;
+    }
+    .medium-heading{
+        margin: 4rem auto 2rem;
+        text-align: center;
+    }
+    .feature {
+        p{
+            text-align: center;
+        }
+        .feature-btn{
+            margin: 1rem auto;
+            text-align: center;
+        }
+    }
+    .banner-wrap{
+        padding: 6rem 3rem;
+        h2,h5{
+            text-align: center;
+        }
+        .banner-btn{
+            text-align: center;
+            margin:1rem auto 3rem;
+        }
+    }
+    hr{
+        margin: 2rem 0;
+    }
+  
+}
+
+@media all and (max-width:576px){
+    .action-style-box{
+        .col-md-4:not(:first-child){
+            margin-top: 3rem;
+        }
+        .action-img{
+            width: 70%;
+        }
+    }
+    .step-content{
+        text-align: center;
+    }
+    .feature{
+        .feature-img{
+            margin: 0;
+        }
+        p{
+            text-align: justify;
+        }
+    }
 }

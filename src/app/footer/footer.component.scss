@@ -26,3 +26,14 @@
         border-bottom: 1.5px solid #101010;
     }
 }
+
+.footer-social{
+    text-align: right;
+}
+
+@media all and (max-width:991px){
+    .footer-main{
+        //text-align: center;
+        padding: 4rem 0;
+    }
+}

@@ -54,3 +54,41 @@
         }
     }}
 }
+.mobile-menu{
+    display: none;
+}
+
+@media all and (max-width:991px){
+    .right-menu{
+        display: none;
+    }
+    .mobile-menu{
+        display: block;
+        a{
+            font-weight: 600;
+        }
+    }
+    .header-transparent{
+        padding: 1rem 0;
+    }
+    .shopping-cart{
+        display: none;
+    }
+
+    .dropdown-section {
+        padding: 2rem 0;
+        .dropdown-item {
+
+a{
+    border-bottom: none;
+}
+            i {
+                font-size: 1.5rem;
+                margin-right: 0px;
+                float: left;
+                background: transparent;
+            }
+        } 
+    } 
+    
+}

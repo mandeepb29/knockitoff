@@ -72,7 +72,7 @@ h1 {
 h2 {
     font-size: 28px;
     line-height: 36px;
-    letter-spacing: -1px;
+    letter-spacing: -0.05rem;
 }
 
 h3 {
@@ -348,8 +348,8 @@ img.pull-right {
 
 .section-sub-title{
     font-weight: 600;
-    font-size: 42px;
-    line-height: 46px;
+    font-size: 4.2rem;
+    line-height: 1.2;
     margin: 0px 0 25px;
     color: #1caad9;
 }
@@ -1072,8 +1072,9 @@ ul.navbar-nav>li>a i {
 .nav-search{
     position: absolute;
     cursor: pointer;
-    top: 22px;
-    right: 10px;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
     color: #fff;;
 }
 
@@ -1103,8 +1104,9 @@ ul.navbar-nav>li>a i {
 .search-block .search-close {
     color: #999;
     position: absolute;
-    top: -53px;
-    right: -10px;
+    top: -50%;
+    right: -1rem;
+    transform: translateY(-50%);
     font-size: 32px;
     cursor: pointer;
     background: #23282d;
@@ -1238,7 +1240,6 @@ ul.navbar-nav>li.header-get-a-quote:hover>a:after {
     color: #fff;
     font-weight: 400;
     text-transform: capitalize;
-    letter-spacing: -1px;
 }
 
 .slider-text {
@@ -2022,11 +2023,8 @@ ul.navbar-nav>li.header-get-a-quote:hover>a:after {
 
 .isotope-nav ul {
     list-style: none;
-    margin: 0;
-    padding: 2rem;
-    display: flex;
+    padding: 1rem 1rem;
     border-radius: 6px;
-    justify-content: space-between;
     background: #df1660;
 }
 
@@ -2627,6 +2625,7 @@ img.testimonial-thumb {
     font-size: 14px;
     font-weight: 700;
     position: relative;
+    display: inline-block;
     margin: 0 0 30px;
     padding-left: 15px;
     text-transform: uppercase;
