@@ -85,8 +85,8 @@ jQuery(function ($) {
 	/* ----------------------------------------------------------- */
 
 	$('#main-slide').carousel({
-		pause: true,
-		interval: 100000,
+		pause: false,
+		interval: 3500,
 	});
 
 
@@ -122,6 +122,7 @@ jQuery(function ($) {
 		dots: false,
 		mouseDrag: true,
 		touchDrag: true,
+		
 		slideSpeed: 800,
 		navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
 		items: 4,

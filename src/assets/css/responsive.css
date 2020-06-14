@@ -21,7 +21,7 @@
 	/* Header */
 
 	ul.navbar-nav > li {
-    	padding: 0 6px;
+    	padding: 0px;
 	}
 
 	ul.navbar-nav > li > a,
@@ -479,7 +479,9 @@
 	}
 
 	.navbar-collapse.in {
-	overflow-y: scroll;height: 50vh;
+		padding-top: 4rem;
+		background-color: #fff;
+	overflow-y: scroll;height: 95vh;
 	}
 
 	ul.nav li.dropdown:hover ul.dropdown-menu {
@@ -548,14 +550,14 @@
 	ul.navbar-nav li a{
 		line-height:normal !important;
 		color:#333;
-	
+		margin-bottom: 3rem;
 		border-top: 0;
 		display: block;
 		min-width: 100%;
 	}
-	ul.navbar-nav li a:not(:last-child){
+	/* ul.navbar-nav li a:not(:last-child){
 		border-bottom: 1px solid #303030 ;
-	}
+	} */
 	ul.navbar-nav .dropdown-menu{ float:none;position: relative; border:0; margin:0; padding:0;}
 	ul.navbar-nav .dropdown-menu li a{ color:#fff;}
 	ul.navbar-nav li.dropdown ul.dropdown-menu li.dropdown-submenu .dropdown-menu{ left:0;position: relative;}

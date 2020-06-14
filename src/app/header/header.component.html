@@ -1,9 +1,20 @@
 <!-- Header start -->
 <header>
   <nav class="site-navigation header-transparent navigation navdown">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-sm-12">
+
+          <a routerLink="/" class="logo">
+            <h4 class="logo-img">
+              <i class="icofont-graduate mr-2"></i>
+              KnockItOff</h4>
+          </a>
+          <a routerLink="/" class="logo logo-mobile">
+            <h4 class="logo-img">
+              <i class="icofont-graduate mr-2"></i>
+              KnockItOff</h4>
+          </a>
           <div class="site-nav-inner pull-left">
             <button
               type="button"
@@ -17,7 +28,9 @@
               <span class="icon-bar"></span>
             </button>
 
+          
             <div class="collapse navbar-collapse navbar-responsive-collapse">
+             
               <ul class="nav navbar-nav">
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown"
@@ -170,7 +183,7 @@
                 </li>
 
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                  <a href="#" class="dropdown-toggle pink-btn" data-toggle="dropdown"
                     >Buy Courses <i class="fa fa-angle-down"></i
                   ></a>
                   <ul class="dropdown-menu custom-dropdown" role="menu">
@@ -331,10 +344,14 @@
                     <li><a href="404.html">eCommerce</a></li>
                   </ul>
                 </li>
+
+               
                 <div class="mobile-menu nav navbar-nav">
                   <li><a href="contact.html">Login</a></li>
                   <li><a href="contact.html">Signup</a></li>
                 </div>
+               
+               
                
 
                 <!--                               
@@ -342,6 +359,8 @@
             <li><a href="contact.html">Signup</a></li> -->
               </ul>
               <!--/ Nav ul end -->
+
+            
             </div>
             <!--/ Collapse end -->
           </div>
@@ -350,6 +369,21 @@
           <div class="site-nav-inner pull-right right-menu">
             <div class="collapse navbar-collapse navbar-responsive-collapse">
               <ul class="nav navbar-nav">
+                <li>
+                  <div class="search-block-navbar">
+                    <i class="icofont-search-1"></i>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Enter courses, mentors and skills.."
+                    />
+                  </div> 
+                </li>
+                <li class="open-search-btn">
+                  <a (click)="toggleSearch()"
+                    >  <i class="icofont-search-1"></i>
+                  </a>
+                </li>
                 <li class="shopping-cart">
                   <a href="contact.html"
                     ><i class="fa fa-shopping-cart" aria-hidden="true"></i>
@@ -357,6 +391,17 @@
                 </li>
                 <li><a href="contact.html">Login</a></li>
                 <li><a href="contact.html">Signup</a></li>
+                <li><a class="nav-btn" href="contact.html">Become a Teacher</a></li>
+
+                <div class="search-block">
+                  <input
+                    type="text"
+                    class="form-control"
+                    
+                    placeholder="Type what you want and enter"
+                  />
+                  <span class="search-close">&times;</span>
+                </div>
               </ul>
               <!--/ Nav ul end -->
             </div>
@@ -367,12 +412,23 @@
         <!--/ Col end -->
       </div>
       <!--/ Row end -->
-
-      <div class="nav-search">
-        <span id="search"><i class="fa fa-search"></i></span>
+      <div class=" mobile-side-menu">
+        <li class="open-search-btn">
+          <a (click)="toggleSearch()"
+            >  <i class="icofont-search-1"></i>
+          </a>
+        </li>
+        <li class="shopping-cart">
+          <a href="contact.html"
+            ><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          </a>
+        </li>
       </div>
+      <!-- <div class="nav-search">
+        <span id="search"><i class="fa fa-search"></i></span>
+      </div> -->
       <!-- Search end -->
-
+<!-- 
       <div class="search-block" style="display: none;">
         <input
           type="text"
@@ -380,11 +436,34 @@
           placeholder="Type what you want and enter"
         />
         <span class="search-close">&times;</span>
-      </div>
+      </div> -->
       <!-- Site search end -->
     </div>
     <!--/ Container end -->
   </nav>
+
+
   <!--/ Navigation end -->
 </header>
 <!--/ Header end -->
+
+<div class="search-box">
+  <div class="close-search-btn" (click)="toggleSearch()">
+    <i class="icofont-close-line"></i>
+  </div>
+  
+  <div class="container-fluid">
+    <h4 class="mt-4">Search Courses</h4>
+
+
+    <div class="search-bar">
+      <input
+      type="text"
+      class="form-control"
+      placeholder="Type what you want and enter"
+    />
+    </div>
+  </div>
+  
+  
+</div>

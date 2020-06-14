@@ -33,13 +33,16 @@
 }
 
 .card{
-    margin: 2rem;
+    margin: 1rem 1rem;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     overflow: hidden;
     border-radius: 4px;
     cursor: pointer;
 }
-
+.project-area{
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
 .card-caption{
     background-color: #fff;
     height: 50px;
@@ -98,7 +101,9 @@
         transform: translateY(-50px);
     }
 } 
-
+.steps-container{
+    margin-top: 5rem;
+}
 .single-step{
     margin: 3rem 0 1rem;
     animation: fade_in 0.5s ease-out alternate;
@@ -136,9 +141,19 @@
         margin-bottom: 2rem;
     }
 }
-
+.list-item{
+    display: flex;
+    align-items: center;
+    .icon{
+        color: #1ac95d;
+        margin-right:4px;
+    }
+    p{
+        margin: 0;
+    }
+}
 .medium-heading {
-    font-weight: 600;
+    font-weight: 400;
     font-size: 3.5rem;
     line-height: 1.2;
     margin: 0px 0 25px;

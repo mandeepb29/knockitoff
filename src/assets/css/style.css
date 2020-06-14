@@ -343,11 +343,11 @@ img.pull-right {
     font-size: 18px;
     line-height: 28px;
     margin: 0 0 40px;
-    font-weight: 300;
+    font-weight: 600;
 }
 
 .section-sub-title{
-    font-weight: 600;
+    font-weight: 400;
     font-size: 4.2rem;
     line-height: 1.2;
     margin: 0px 0 25px;
@@ -679,7 +679,7 @@ ul.top-info li p.info-text {
     background: linear-gradient(45deg,#19295a,#2ec3fb);
 }
 .navbar-fixed {
-    z-index: 99999;
+    z-index: 1000;
     position: fixed !important;
     opacity: .98;
     width: 100%;
@@ -694,9 +694,6 @@ ul.top-info li p.info-text {
     -webkit-backface-visibility: hidden;
 }
 
-.navbar-fixed ul li a{
-    color: #212121 !important;
-}
 
 /* Header variation
 ================================================== */
@@ -892,7 +889,7 @@ ul.navbar-nav>li.active>a:after {
 }
 
 ul.navbar-nav>li {
-    padding: 0 13px;
+    padding: 0;
     position: relative;
 }
 
@@ -906,23 +903,24 @@ ul.navbar-nav>li:last-child:after {
 
 ul.navbar-nav>li>a {
     font-family: 'Open Sans', sans-serif;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.708);
     text-rendering: optimizeLegibility;
     font-weight: 600;
     text-transform: capitalize;
     font-size: 14px;
-    margin: 0;
+    margin: 1rem 0.5rem;
     line-height: 40px;
-    padding: 15px 0;
-    -webkit-transition: 350ms;
-    -moz-transition: 350ms;
-    -o-transition: 350ms;
-    transition: 350ms;
+    padding: 0 12px;
+    -webkit-transition: 250ms;
+    -moz-transition: 250ms;
+    -o-transition: 250ms;
+    transition: 250ms;
 }
 
 ul.navbar-nav>li>a:hover,
 ul.navbar-nav>li>a:focus {
     background: none;
+    color: rgba(255, 255, 255, 1);
 }
 
 ul.navbar-nav>li>a i {
@@ -1178,7 +1176,7 @@ ul.navbar-nav>li.header-get-a-quote:hover>a:after {
 
 #main-slide .item.active .slider-content {
     opacity: 1;
-    margin-top: 12rem;
+    margin-top: 8rem;
     -webkit-transition: opacity 100ms;
     -moz-transition: opacity 100ms;
     -o-transition: opacity 100ms;
@@ -1187,7 +1185,7 @@ ul.navbar-nav>li.header-get-a-quote:hover>a:after {
 
 #main-slide .slider-content {
     top: 50%;
-    left: 10%;
+    left: 0;
     padding: 0;
     position: absolute;
     width: 100%;
@@ -1197,7 +1195,7 @@ ul.navbar-nav>li.header-get-a-quote:hover>a:after {
 }
 
 #main-slide .slider-content.text-left {
-    left: 10%;
+    left: 0%;
 }
 
 #main-slide .slider-content.text-right {
@@ -2060,6 +2058,7 @@ ul.navbar-nav>li.header-get-a-quote:hover>a:after {
 .isotope-img-container {
     position: relative;
     overflow: hidden;
+    height: 18rem;
 }
 
 
