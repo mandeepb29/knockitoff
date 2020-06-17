@@ -18,20 +18,16 @@
     margin-left: 1rem;
     margin-right: 2rem;
     .logo-img{
-        margin: 0;
-        font-weight: bold;
-        color: #fff;
-        display: flex;
-        align-items: center;
-        i{
-            font-size: 3rem;
-        }
+        height: 3rem;
+        filter: brightness(0) invert(1);
     }
     &-mobile{
         position: absolute;
         left: 5rem;
         top: 1rem;
         display: none;
+
+      
     }
 }
 .navbar-fixed{
@@ -47,7 +43,7 @@
     }
     .logo{
         .logo-img{
-            color: #222;
+            filter: none;
         }
     }
 }

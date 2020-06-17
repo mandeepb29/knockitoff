@@ -47,12 +47,13 @@
         border-radius: 4px;
         position: absolute;
         width: 100%;
-        left: 102%;
+        left: 0%;
         z-index: 100;
-        top: 3%;
-        transform-origin: top left;
+        top: 0%;
+        transform-origin: top;
         animation: zoom_in 0.5s forwards cubic-bezier(0.19, 1, 0.22, 1);
         display: none;
+        pointer-events: none;
     
         .title{
             font-weight: 600;

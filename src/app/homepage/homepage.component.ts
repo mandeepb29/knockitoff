@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Courses } from '../data/course-data';
+declare var $:any;
 
 @Component({
   selector: 'app-homepage',
@@ -18,13 +19,8 @@ export class HomepageComponent implements OnInit {
     this.step = 1;
     this.courses = this.coursesData.data;
 
-    const coursesCards = Array.from(document.querySelectorAll(".card"));
-    console.log(coursesCards);
-    for (const card of coursesCards) {
-      card.addEventListener('mouseenter', ()=>{
-        console.log("hello");
-      });
-  }
+    // let cards = document.querySelectorAll(".isotope-img-container");
+    // console.log(cards);
 
 }
   openDialog(){
@@ -56,7 +52,5 @@ isTimeToUpdate = function () {
   // console.log(counter);
   return this.counter++ % this.updateRate === 0;
 };
-
-
 
 }
