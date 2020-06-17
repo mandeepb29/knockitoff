@@ -145,66 +145,45 @@
                             <li><a href="#" class="active" data-filter="*">Show All</a></li>
                         </div>
                         <div class="col-lg-2 col-md-4 col-6 text-center">
-                            <li><a href="#" data-filter=".commercial">Commercial</a></li>
+                            <li><a href="#" data-filter=".frontend">Frontend Development</a></li>
                             </div>
                             <div class="col-lg-2 col-md-4 col-6 text-center">
-                                <li><a href="#" data-filter=".education">Education</a></li>
+                                <li><a href="#" data-filter=".backend">Backend Development</a></li>
                                 </div>
                                 <div class="col-lg-2 col-md-4 col-6 text-center">
-                                    <li><a href="#" data-filter=".government">Government</a></li>
+                                    <li><a href="#" data-filter=".python">Python</a></li>
                                     </div>
                                     <div class="col-lg-2 col-md-4 col-6 text-center">
-                                        <li><a href="#" data-filter=".infrastructure">Infrastructure</a></li>
+                                        <li><a href="#" data-filter=".datascience">Data Science</a></li>
                                         </div>
                                         <div class="col-lg-2 col-md-4 col-6 text-center">
-                                            <li><a href="#" data-filter=".residential">Residential</a></li>
+                                            <li><a href="#" data-filter=".coding">Basic Coding</a></li>
                                             </div>
-                                          
-
                     </div>
                 </ul>
             </div><!-- Isotope filter end -->
 
-
             <div id="isotope" class="isotope">
                 <div class="row justify-content-center">
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 commercial isotope-item">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 isotope-item" [ngClass]="item.class" *ngFor="let item of courses">
                         <div class="card">
                             <div class="isotope-img-container">
-                                <a class="gallery-popup" href="assets/images/projects/project1.jpg">
-                                    <img class="img-responsive" src="assets/images/projects/project1.jpg" alt="">
-                                    <!-- <span class="gallery-icon"><i class="fa fa-eye"></i></span> -->
-                                </a>
+                                    <img class="img-responsive" [src]="item.img" alt="">
                                 <div class="project-item-info">
                                     <div class="project-item-info-content">
                                         <h3 class="project-item-title">
-                                            <a href="projects-single.html">Lorem ipsum dolor sit, amet consectetur </a>
+                                            <a href="projects-single.html">{{item.title}}</a>
                                         </h3>
-                                        <p class="project-cat">Commercial, Interiors</p>
+                                        <p class="project-cat">{{item.category}}</p>
                                     </div>
                                 </div>
                             </div>
-    
                             <div class="card-caption">
                                 <div class="card-content default-content">
                                     <div class="card-title">
                                         <h5>
-                                            Lorem, ipsum...
+                                            {{item.title}}
                                         </h5>
-                                    </div>
-                                    <div class="card-stats">
-                                        <div class="rating icon-wrap">
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <span class="number">
-                                                4.9
-                                            </span>
-                                        </div>
-                                       <div class="downloads icon-wrap">
-                                        <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
-                                        <span class="number">
-                                            748
-                                        </span>
-                                       </div>
                                     </div>
                                 </div>
                                 <div class="card-content hover-content">
@@ -213,395 +192,52 @@
                                             <h5>Rating</h5>
                                             <i class="fa fa-star text-primary" aria-hidden="true"></i>
                                             <span class="number">
-                                                4.9
+                                                {{item.rating}}
                                             </span>
                                         </div>
                                        <div class="downloads icon-wrap">
                                         <h5>Downloads</h5>
                                         <i class="fa fa-arrow-circle-down" aria-hidden="true" style="color: gold;"></i>
                                         <span class="number">
-                                            748
+                                            {{item.downloads}}
                                         </span>
                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                       
-                    </div><!-- Isotope item 1 end -->
-    
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 education isotope-item">
-                        <div class="card">
-                            <div class="isotope-img-container">
-                                <a class="gallery-popup" href="assets/images/projects/project2.jpg">
-                                    <img class="img-responsive" src="assets/images/projects/project2.jpg" alt="">
-                                    <!-- <span class="gallery-icon"><i class="fa fa-eye"></i></span> -->
-                                </a>
-                                <div class="project-item-info">
-                                    <div class="project-item-info-content">
-                                        <h3 class="project-item-title">
-                                            <a href="projects-single.html">Lorem ipsum dolor sit, amet consectetur </a>
-                                        </h3>
-                                        <p class="project-cat">education</p>
-                                    </div>
+
+                        <div class="card-dialog">
+                            <h5 class="title">
+                                {{item.title}}
+                            </h5>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="category">
+                                    {{item.category}}
+                                </div>
+                                <div class="date">
+                                    <i class="icofont-ui-calendar"></i>
+                                    {{item.date}}
                                 </div>
                             </div>
-    
-                            <div class="card-caption">
-                                <div class="card-content default-content">
-                                    <div class="card-title">
-                                        <h5>
-                                            Lorem, ipsum...
-                                        </h5>
-                                    </div>
-                                    <div class="card-stats">
-                                        <div class="rating icon-wrap">
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <span class="number">
-                                                4.9
-                                            </span>
-                                        </div>
-                                       <div class="downloads icon-wrap">
-                                        <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
-                                        <span class="number">
-                                            748
-                                        </span>
-                                       </div>
-                                    </div>
-                                </div>
-                                <div class="card-content hover-content">
-                                    <div class="card-stats">
-                                        <div class="rating icon-wrap">
-                                            <h5>Rating</h5>
-                                            <i class="fa fa-star text-primary" aria-hidden="true"></i>
-                                            <span class="number">
-                                                4.9
-                                            </span>
-                                        </div>
-                                       <div class="downloads icon-wrap">
-                                        <h5>Downloads</h5>
-                                        <i class="fa fa-arrow-circle-down" aria-hidden="true" style="color: gold;"></i>
-                                        <span class="number">
-                                            748
-                                        </span>
-                                       </div>
-                                    </div>
+
+                            <h6 class="duration">
+                                <i class="icofont-clock-time"></i>
+                                {{item.duration}} hours
+                            </h6>
+
+                            <p class="desc">
+                                {{item.desc}}
+                            </p>
+
+                            <div class="features">
+                                <div class="list-item" *ngFor="let feature of item.features">
+                                    <i class="icon fa fa-check"></i>
+                                    <p>{{feature}}</p>
                                 </div>
                             </div>
+                           
                         </div>
-                       
-                    </div><!-- Isotope item 1 end -->
-    
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 government isotope-item">
-                        <div class="card">
-                            <div class="isotope-img-container">
-                                <a class="gallery-popup" href="assets/images/projects/project4.jpg">
-                                    <img class="img-responsive" src="assets/images/projects/project4.jpg" alt="">
-                                    <!-- <span class="gallery-icon"><i class="fa fa-eye"></i></span> -->
-                                </a>
-                                <div class="project-item-info">
-                                    <div class="project-item-info-content">
-                                        <h3 class="project-item-title">
-                                            <a href="projects-single.html">Lorem ipsum dolor sit, amet consectetur </a>
-                                        </h3>
-                                        <p class="project-cat">government</p>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="card-caption">
-                                <div class="card-content default-content">
-                                    <div class="card-title">
-                                        <h5>
-                                            Lorem, ipsum...
-                                        </h5>
-                                    </div>
-                                    <div class="card-stats">
-                                        <div class="rating icon-wrap">
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <span class="number">
-                                                4.9
-                                            </span>
-                                        </div>
-                                       <div class="downloads icon-wrap">
-                                        <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
-                                        <span class="number">
-                                            748
-                                        </span>
-                                       </div>
-                                    </div>
-                                </div>
-                                <div class="card-content hover-content">
-                                    <div class="card-stats">
-                                        <div class="rating icon-wrap">
-                                            <h5>Rating</h5>
-                                            <i class="fa fa-star text-primary" aria-hidden="true"></i>
-                                            <span class="number">
-                                                4.9
-                                            </span>
-                                        </div>
-                                       <div class="downloads icon-wrap">
-                                        <h5>Downloads</h5>
-                                        <i class="fa fa-arrow-circle-down" aria-hidden="true" style="color: gold;"></i>
-                                        <span class="number">
-                                            748
-                                        </span>
-                                       </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                       
-                    </div><!-- Isotope item 1 end -->
-    
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 infrastructure isotope-item">
-                        <div class="card">
-                            <div class="isotope-img-container">
-                                <a class="gallery-popup" href="assets/images/projects/project7.jpg">
-                                    <img class="img-responsive" src="assets/images/projects/project1.jpg" alt="">
-                                    <!-- <span class="gallery-icon"><i class="fa fa-eye"></i></span> -->
-                                </a>
-                                <div class="project-item-info">
-                                    <div class="project-item-info-content">
-                                        <h3 class="project-item-title">
-                                            <a href="projects-single.html">Lorem ipsum dolor sit, amet consectetur </a>
-                                        </h3>
-                                        <p class="project-cat">infrastructure</p>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="card-caption">
-                                <div class="card-content default-content">
-                                    <div class="card-title">
-                                        <h5>
-                                            Lorem, ipsum...
-                                        </h5>
-                                    </div>
-                                    <div class="card-stats">
-                                        <div class="rating icon-wrap">
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <span class="number">
-                                                4.9
-                                            </span>
-                                        </div>
-                                       <div class="downloads icon-wrap">
-                                        <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
-                                        <span class="number">
-                                            748
-                                        </span>
-                                       </div>
-                                    </div>
-                                </div>
-                                <div class="card-content hover-content">
-                                    <div class="card-stats">
-                                        <div class="rating icon-wrap">
-                                            <h5>Rating</h5>
-                                            <i class="fa fa-star text-primary" aria-hidden="true"></i>
-                                            <span class="number">
-                                                4.9
-                                            </span>
-                                        </div>
-                                       <div class="downloads icon-wrap">
-                                        <h5>Downloads</h5>
-                                        <i class="fa fa-arrow-circle-down" aria-hidden="true" style="color: gold;"></i>
-                                        <span class="number">
-                                            748
-                                        </span>
-                                       </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                       
-                    </div><!-- Isotope item 1 end -->
-    
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 residential isotope-item">
-                        <div class="card">
-                            <div class="isotope-img-container">
-                                <a class="gallery-popup" href="assets/images/projects/project1.jpg">
-                                    <img class="img-responsive" src="assets/images/projects/project6.jpg" alt="">
-                                    <!-- <span class="gallery-icon"><i class="fa fa-eye"></i></span> -->
-                                </a>
-                                <div class="project-item-info">
-                                    <div class="project-item-info-content">
-                                        <h3 class="project-item-title">
-                                            <a href="projects-single.html">Lorem ipsum dolor sit, amet consectetur </a>
-                                        </h3>
-                                        <p class="project-cat">residential</p>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="card-caption">
-                                <div class="card-content default-content">
-                                    <div class="card-title">
-                                        <h5>
-                                            Lorem, ipsum...
-                                        </h5>
-                                    </div>
-                                    <div class="card-stats">
-                                        <div class="rating icon-wrap">
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <span class="number">
-                                                4.9
-                                            </span>
-                                        </div>
-                                       <div class="downloads icon-wrap">
-                                        <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
-                                        <span class="number">
-                                            748
-                                        </span>
-                                       </div>
-                                    </div>
-                                </div>
-                                <div class="card-content hover-content">
-                                    <div class="card-stats">
-                                        <div class="rating icon-wrap">
-                                            <h5>Rating</h5>
-                                            <i class="fa fa-star text-primary" aria-hidden="true"></i>
-                                            <span class="number">
-                                                4.9
-                                            </span>
-                                        </div>
-                                       <div class="downloads icon-wrap">
-                                        <h5>Downloads</h5>
-                                        <i class="fa fa-arrow-circle-down" aria-hidden="true" style="color: gold;"></i>
-                                        <span class="number">
-                                            748
-                                        </span>
-                                       </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                       
-                    </div><!-- Isotope item 1 end -->
-    
-                  
-    
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 infrastructure isotope-item">
-                        <div class="card">
-                            <div class="isotope-img-container">
-                                <a class="gallery-popup" href="assets/images/projects/project1.jpg">
-                                    <img class="img-responsive" src="assets/images/projects/project3.jpg" alt="">
-                                    <!-- <span class="gallery-icon"><i class="fa fa-eye"></i></span> -->
-                                </a>
-                                <div class="project-item-info">
-                                    <div class="project-item-info-content">
-                                        <h3 class="project-item-title">
-                                            <a href="projects-single.html">Lorem ipsum dolor sit, amet consectetur </a>
-                                        </h3>
-                                        <p class="project-cat">infrastructure</p>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="card-caption">
-                                <div class="card-content default-content">
-                                    <div class="card-title">
-                                        <h5>
-                                            Lorem, ipsum...
-                                        </h5>
-                                    </div>
-                                    <div class="card-stats">
-                                        <div class="rating icon-wrap">
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <span class="number">
-                                                4.9
-                                            </span>
-                                        </div>
-                                       <div class="downloads icon-wrap">
-                                        <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
-                                        <span class="number">
-                                            748
-                                        </span>
-                                       </div>
-                                    </div>
-                                </div>
-                                <div class="card-content hover-content">
-                                    <div class="card-stats">
-                                        <div class="rating icon-wrap">
-                                            <h5>Rating</h5>
-                                            <i class="fa fa-star text-primary" aria-hidden="true"></i>
-                                            <span class="number">
-                                                4.9
-                                            </span>
-                                        </div>
-                                       <div class="downloads icon-wrap">
-                                        <h5>Downloads</h5>
-                                        <i class="fa fa-arrow-circle-down" aria-hidden="true" style="color: gold;"></i>
-                                        <span class="number">
-                                            748
-                                        </span>
-                                       </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                       
-                    </div><!-- Isotope item 1 end -->
-    
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 residential isotope-item">
-                        <div class="card">
-                            <div class="isotope-img-container">
-                                <a class="gallery-popup" href="assets/images/projects/project1.jpg">
-                                    <img class="img-responsive" src="assets/images/projects/project2.jpg" alt="">
-                                    <!-- <span class="gallery-icon"><i class="fa fa-eye"></i></span> -->
-                                </a>
-                                <div class="project-item-info">
-                                    <div class="project-item-info-content">
-                                        <h3 class="project-item-title">
-                                            <a href="projects-single.html">Lorem ipsum dolor sit, amet consectetur </a>
-                                        </h3>
-                                        <p class="project-cat">residential</p>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="card-caption">
-                                <div class="card-content default-content">
-                                    <div class="card-title">
-                                        <h5>
-                                            Lorem, ipsum...
-                                        </h5>
-                                    </div>
-                                    <div class="card-stats">
-                                        <div class="rating icon-wrap">
-                                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                                            <span class="number">
-                                                4.9
-                                            </span>
-                                        </div>
-                                       <div class="downloads icon-wrap">
-                                        <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
-                                        <span class="number">
-                                            748
-                                        </span>
-                                       </div>
-                                    </div>
-                                </div>
-                                <div class="card-content hover-content">
-                                    <div class="card-stats">
-                                        <div class="rating icon-wrap">
-                                            <h5>Rating</h5>
-                                            <i class="fa fa-star text-primary" aria-hidden="true"></i>
-                                            <span class="number">
-                                                4.9
-                                            </span>
-                                        </div>
-                                       <div class="downloads icon-wrap">
-                                        <h5>Downloads</h5>
-                                        <i class="fa fa-arrow-circle-down" aria-hidden="true" style="color: gold;"></i>
-                                        <span class="number">
-                                            748
-                                        </span>
-                                       </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                       
                     </div><!-- Isotope item 1 end -->
                 </div>
             </div><!-- Isotop end -->
